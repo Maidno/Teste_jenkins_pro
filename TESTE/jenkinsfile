@@ -1,11 +1,16 @@
 pipeline {
     agent any
-
+    environment {
+        teste_jekins_pro = "$WORKSPACE/TESTE"
+    }
 
     stages{
         stage('preparando ambiente'){
             steps{
                 echo ' teste'
+                dir ("$teste_jekins_pro"){
+                    sh 'gradle wrapper'
+                }
 
             }
 

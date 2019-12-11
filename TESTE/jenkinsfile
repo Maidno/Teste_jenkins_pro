@@ -1,0 +1,15 @@
+pipeline {
+    agent any
+
+
+    stages{
+        stage('preparando ambiente'){
+            steps{
+                echo ' teste'
+
+            }
+
+        }
+
+    }
+}

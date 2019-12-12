@@ -9,7 +9,7 @@ pipeline {
             steps{
                 echo ' teste'
                 dir ("$teste_jekins_pro"){
-                    sh 'gradle wrapper'
+                    bat 'gradle wrapper'
                 }
 
             }
